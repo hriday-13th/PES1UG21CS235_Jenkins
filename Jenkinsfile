@@ -3,6 +3,7 @@ pipeline{
   stages{
     stage('Build'){
       steps{
+        "This is random"
         build 'PES1UG21CS235-1'
         sh 'g++ hello.cpp -o output'
       }
@@ -10,7 +11,7 @@ pipeline{
     
     stage('Test'){
       steps{
-        sh './output'
+        sh 
       }
     }
     
